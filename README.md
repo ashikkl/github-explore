@@ -1,13 +1,13 @@
-##Random GitHub Repos
+#Random GitHub Repos
 This is a simple web application that shows you a list of random GitHub repositories using the GitHub API.
 
-##Technologies Used
+#Technologies Used
 HTML
 CSS
 JavaScript
 GitHub API
 
-##Installation and Setup
+#Installation and Setup
 Clone the repository:
 bash
 Copy code
@@ -22,8 +22,8 @@ When you open the index.html file in your browser, you will see a list of 30 ran
 
 You can reload the page to load another set of 30 random repositories.
 
-##License
+#License
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
-##Contributing
+#Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you find a bug or have a suggestion for improvement.
