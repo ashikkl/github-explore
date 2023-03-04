@@ -1541,11 +1541,9 @@ function requestUserRepos(query) {
   xhr.onload = function () {
     const data = JSON.parse(this.response);
     const items = data.items;
-    console.log(items);
 
     for (let i in items) {
       let item = items[i];
-      console.log(item.html_url);
       let ul = document.getElementById("userRepos");
       let li = document.createElement("li");
       li.classList.add("list-group-item");
@@ -1561,5 +1559,4 @@ function requestUserRepos(query) {
   xhr.send();
 }
 const querySel = makeid();
-console.log(querySel);
 requestUserRepos(querySel);
