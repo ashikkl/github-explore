@@ -5,7 +5,7 @@ This is a simple web application that shows you a list of random GitHub reposito
 
 # Technologies Used
 + HTML
-+ CSS
++ BootStrap
 + JavaScript
 + GitHub API
 
