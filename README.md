@@ -11,7 +11,7 @@ This is a simple web application that shows you a list of random GitHub reposito
 ## Clone the repository:
 > bash
 > Copy code
-` git clone https://github.com/<your-username>/random-github-explore.git `
+` https://github.com/ashikkl/github-explore.git `
 ## Navigate into the project directory:
 > bash
 > Copy code
