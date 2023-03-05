@@ -1551,9 +1551,9 @@ function requestUserRepos(query) {
       li.classList.add("card-body");    
       li.classList.add("mb-2");
       li.innerHTML = `
-                <p class='card-title' style='font-size:3vmin' ><strong>Repo:</strong> ${item.name}</p>
-                <p class='card-text 'style='font-size:2vmin'><strong>Description:</strong> ${item.description}</p>
-                <p class='card-text' style='font-size:2vmin'><strong>URL:</strong> <a href="${item.html_url}">${item.html_url}</a></p>
+                <p class='card-title' style='font-size:calc(2vmin + 1rem)' ><strong>Repo:</strong> ${item.name}</p>
+                <p class='card-text 'style='font-size:calc(1vmin + .5rem)'><strong>Description:</strong> ${item.description}</p>
+                <p class='card-text' style='font-size:calc(1vmin + .5rem)'><strong>URL:</strong> <a href="${item.html_url}">${item.html_url}</a></p>
             `;
 
       ul.appendChild(li);
