@@ -1525,7 +1525,9 @@ const query = [
   "wrap",
   "yesterday",
 ];
-const handleClick=()=>{window.location.reload();};
+const handleClick = () => {
+  window.location.reload();
+};
 function makeid() {
   const queryLength = query.length;
   return query[Math.floor(Math.random() * queryLength)];
@@ -1548,12 +1550,12 @@ function requestUserRepos(query) {
       let li = document.createElement("li");
       li.classList.add("list-group-item");
       li.classList.add("card");
-      li.classList.add("card-body");    
-      li.classList.add("mb-2");
+      li.classList.add("card-body");
+      li.style.cssText += "margin-bottom: calc(5vmax / 2)";
       li.innerHTML = `
-                <p class='card-title' style='font-size:calc(2vmin + 1rem)' ><strong>Repo:</strong> ${item.name}</p>
-                <p class='card-text 'style='font-size:calc(1vmin + .5rem)'><strong>Description:</strong> ${item.description}</p>
-                <p class='card-text' style='font-size:calc(1vmin + .5rem)'><strong>URL:</strong> <a href="${item.html_url}">${item.html_url}</a></p>
+                <p class='card-title' style='font-size:calc(5vmax / 2)' ><strong>Repo:</strong> ${item.name}</p>
+                <p class='card-text 'style='font-size:calc(5vmax / 3)'><strong>Description:</strong> ${item.description}</p>
+                <p class='card-text' style='font-size:calc(5vmax / 3)'><strong>URL:</strong> <a href="${item.html_url}">${item.html_url}</a></p>
             `;
 
       ul.appendChild(li);
