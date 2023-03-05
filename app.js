@@ -1525,7 +1525,7 @@ const query = [
   "wrap",
   "yesterday",
 ];
-
+const handleClick=()=>{window.location.reload();};
 function makeid() {
   const queryLength = query.length;
   return query[Math.floor(Math.random() * queryLength)];
@@ -1547,10 +1547,13 @@ function requestUserRepos(query) {
       let ul = document.getElementById("userRepos");
       let li = document.createElement("li");
       li.classList.add("list-group-item");
+      li.classList.add("card");
+      li.classList.add("card-body");    
+      li.classList.add("mb-2");
       li.innerHTML = `
-                <p><strong>Repo:</strong> ${item.name}</p>
-                <p><strong>Description:</strong> ${item.description}</p>
-                <p><strong>URL:</strong> <a href="${item.html_url}">${item.html_url}</a></p>
+                <p class='card-title fs-3' ><strong>Repo:</strong> ${item.name}</p>
+                <p class='card-text fs-3'><strong>Description:</strong> ${item.description}</p>
+                <p class='card-text fs-3'><strong>URL:</strong> <a href="${item.html_url}">${item.html_url}</a></p>
             `;
 
       ul.appendChild(li);
